@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>I-Transit</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <!--<link rel="javascript" href="js/index.js">-->
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav-container">
+                <ul class="main-nav">
+                    <li class="nav-item logo-item"><img class="logo" src="img/logo.jpg" alt="Logo"></li>    
+
+                    <li class="nav-item"><h1>Linking Every Corner Of The City</h1></li>
+                </ul>
+            </nav>
+
+            <div id="login_div" class="login">
+                    <label id="LoginLabel">ADDMINISTRATION LOGIN</label><br>
+                    <label id="labelid">Login ID:</label>
+                    <input type="email" name="login_email" id="LoginEmail" placeholder="Enter Email"  require><br>
+                    <label id="labelpassword">Password:</label>
+                    <input type="password" name="login_password" id="Loginpassword" placeholder="Password" require><br>
+                    <button onclick="signIn()" id="LoginSubmit"> login </button>
+            </div>
+        </header>
+        
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

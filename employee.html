@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>I-Transit</title>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="css/style2.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+        <main>
+
+            <header class="header">
+               
+                <nav class="nav-container">
+                    <ul class="main-nav">
+                            
+
+                        <li class="nav-item"><h1>I-Transit</h1></li>
+                        <li class="nav-item logo-item">   <p class="labellogout" onclick="signOut()">Logout<i class="fas fa-sign-out-alt" style="margin-left: 5px;size: 15px;"></i></p></li>
+                    </ul>
+                </nav>
+                <footer class="footer">
+                    <ul class="nav">
+                        <li class="nav__item"><a href="home.html" class="nav__link"> Home<i class="fas fa-home" style="size: 10px ;margin-left: 5px;"></i></a></li>
+                        <li class="nav__item"><a href="monitor.html" class="nav__link">Bus Survey<i class="fas fa-poll-h" style="size: 10px ;margin-left: 5px;"></i> </a></li>
+                        <li class="nav__item"><a href="businfo.html" class="nav__link">Bus Info & Schedual<i class="far fa-calendar-alt" style="size: 10px ;margin-left: 5px;"></i></a></li>
+                        <li class="nav__item"><a href="employee.html" class="nav__link">Employee Details<i class="fas fa-info-circle" style="size: 10px ;margin-left: 5px;"></i></a></li>
+                    </ul>
+                </footer>  
+
+                <section class="bus-info">
+
+                    <h2>Employee Details</h2>
+                </section>
+
+                <table class="employeetable">  
+                    <tr><th>Employee Id</th><th>Employee Name</th><th>Role</th><th>Bus Number</th></tr>  
+                    <tr><td>101</td><td>Sonoo</td><td>Driver</td><td>216</td></tr>  
+                    <tr><td>102</td><td>James</td><td>Conductor</td><td>106</td></tr>  
+                    <tr><td>103</td><td>Swati</td><td>Driver</td><td>108</td></tr>  
+                    <tr><td>104</td><td>Chetna</td><td>Conductor</td><td>136</td></tr>  
+                    </table>  
+
+
+            </header>
+
+            
+
+        </main>
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

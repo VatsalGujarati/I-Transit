@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>I-Transit</title>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="css/style2.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+
+        <main>
+
+            <header class="header">
+               
+                <nav class="nav-container">
+                    <ul class="main-nav">    
+
+                        <li class="nav-item"><h1>I-Transit</h1></li>
+                        <li class="nav-item logo-item">  <p class="labellogout" onclick="signOut()">Logout<i class="fas fa-sign-out-alt" style="margin-left: 5px;size: 15px;"></i></p></li>
+                    </ul>
+                </nav>
+                <footer class="footer">
+                    <ul class="nav">
+                        <li class="nav__item"><a href="home.html" class="nav__link"> Home<i class="fas fa-home" style="size: 10px ;margin-left: 5px;"></i></a></li>
+                        <li class="nav__item"><a href="monitor.html" class="nav__link">Bus Survey<i class="fas fa-poll-h" style="size: 10px ;margin-left: 5px;"></i> </a></li>
+                        <li class="nav__item"><a href="businfo.html" class="nav__link">Bus Info & Schedual<i class="far fa-calendar-alt" style="size: 10px ;margin-left: 5px;"></i></a></li>
+                        <li class="nav__item"><a href="employee.html" class="nav__link">Employee Details<i class="fas fa-info-circle" style="size: 10px ;margin-left: 5px;"></i></a></li>
+                    </ul>
+                </footer>  
+
+                <section class="bus-info">
+
+                    <h2>Passenger Counting & Revanue Analysis</h2>
+                </section>
+                <section>
+                    <div id="monitor_bus">
+                        <label id="slt_bus">Select Date:</label>
+                        <input type="date" class="datepicker" id="select_date">
+                        <label for="" id="slt_busno">Select Bus Number:</label>
+                        <select name="bus_no" id="bus_no">
+                            <option value="106">106</option>
+                            <option value="108">108</option>
+                            <option value="206">206</option>
+                            <option value="127">127</option>
+                            <option value="136">136</option>
+                            <option value="126">126</option>
+                        </select>
+                        <button type="button" id="sr_button" onclick="getcount()">Search</button>
+                    </div>
+                </section>
+                <section class="bus-info">
+                    <div class="peaple_count">
+                        <label for="" id="pl_count">Peaple Counted</label>
+
+                    </div>
+                    <div id="peaple_count">
+                        <h1>Count:</h1>
+                    </div>
+                    <div class="ticket_scan">
+                        <label for="" id="ticket">Ticket Scanned</label>
+                        
+                    </div>
+                    <div id="ticket_count">
+                        <h1>Count:</h1>
+                       
+                    </div>
+                </section>
+            
+        </header>
+
+
+        </main>
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>          
+        <script src="js/index.js"></script>
+        <script src="js/monitor.js"></script>
+
+
+    </body>
+</html>

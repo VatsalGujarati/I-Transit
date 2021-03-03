@@ -1,0 +1,430 @@
+/*---------------------- Initialization Starts Here ----------------------*/
+
+:root {
+    --color-primary: #52de97;
+    --color-secondary: #3c9d9b;
+    --color-tertiary: #394a6d;
+        
+    --back-color-1:rgb(240, 240, 240);
+    --back-color-2:rgb(255, 255, 255);
+    --back-color-3:rgb(230,230,230);
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    background-image: linear-gradient(to bottom right , rgba(17, 17, 17, 0.7) , rgba(0, 0, 0, 0.7)), url(../img/Hero-mg.jpg);
+    
+}
+
+h2 {
+    font-size: 2.5rem;
+    word-spacing: 0.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: var(--color-tertiary);
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h1,h2,h3{
+    font-weight: 300;
+}
+
+main{
+    display: grid;
+    grid-template-rows: 90vh repeat(5,min-content);
+    grid-template-columns: repeat(6,1fr);
+}
+
+section{
+    padding: 5rem;
+}
+
+/*---------------------- Initialization Ends Here ----------------------*/
+
+/*---------------------- Header Starts Here ----------------------*/
+
+.header{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 100%;
+    padding-bottom: 0cm;
+    background-attachment: fixed;
+
+    grid-column: 1 / -1;
+}
+
+.nav-container{
+    margin-top: 2rem;
+}
+
+.main-nav{
+    display: flex;
+    list-style: none;
+    align-items: flex-start;
+    
+}
+
+.logo-item{
+    flex-grow: 1;
+}
+
+.logo{
+    width: 10rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+.nav-item{
+    padding: 0 4rem;
+    font-size: 1.8rem;
+    color: #eee;
+    font-weight: 500;
+}
+
+/*----------------------login ----------------------*/
+.login{
+    
+   padding-top: 3cm;
+   padding-left: 40%;
+}
+#LoginLabel{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#labelid{
+    color: white;
+    padding-right: 25px;
+    font: size 16px; 
+}
+#labelpassword{
+    color: white;
+    padding-right: 20px;
+    font: size 16px;
+}
+#LoginEmail{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 15px;
+    margin-left: 1%;
+    padding: 10px;
+    border-radius: 10px;
+    width: 450;
+    height: 50px;   
+}
+#Loginpassword{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 15px;
+    margin-left: 1%;
+    padding: 10px;
+    border-radius: 10px;
+    width: 450;
+    height: 50px;   
+}
+#LoginSubmit{
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 80px;
+    background-color: #b4b6b5;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+}
+#LoginEmail:focus{
+        border: 1px solid rgb(0, 135, 197);
+}
+#LoginPassword:focus{
+    border: 1px solid rgb(0, 135, 197);
+}
+
+
+
+/*---------------------- login ends Here ----------------------*/
+.hero-text{
+    color: #eee;
+    font-size: 2.5rem;
+    width: 40%;
+    margin-top: 10rem;
+    margin-left: 5rem;
+    text-transform: uppercase;
+
+}
+
+.hero-text h1{
+    font-weight: 300;
+}
+
+.news-feed-container{
+    width: 30vw;
+    background-color: white;
+    margin-top: -16rem;
+    margin-left: 85rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.news-feed-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.news-heading{
+    color: #222;
+    font-size: 2.5rem;
+    font-weight: 500;
+    background-color: #eee;
+    text-align: center;
+}
+
+.news-feeds-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-feed{
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+/*---------------------- Header ends Here ----------------------*/
+
+/*---------------------- Feature 1 Starts Here ----------------------*/
+
+
+.my-plan{
+    background-color: var(--back-color-1);
+    grid-column: 1 / -1;
+}
+
+.my-plan__container{
+    display: flex;
+}
+
+.my-plan__map{
+    width: 60%;
+    background-color: var(--back-color-3);
+    border-radius: 10px;
+    overflow: hidden;
+
+    /*For Testing Puropse*/
+    background-image: url(../img/maps-1.png);
+    background-size: cover;
+}
+
+.form-box{
+    width: 40%;
+    background-color: var(--back-color-3);
+    padding: 2rem;
+    margin-right: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.my-plan-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 80%;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.button{
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 2rem;
+    font-weight: 300;
+    text-decoration: none;
+    border: none;
+    border-radius: 200px !important;
+    background-color: var(--color-tertiary);
+    color: #eee;
+}
+
+/*---------------------- Feature 2 starts Here ----------------------*/
+
+.bus-stop-nearby{
+    background-color: var(--back-color-2);
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bus-stop-nearby__map{
+    width: 100%;
+    height: 40rem;
+    background-color: var(--back-color-3);
+    border-radius: 10px;
+    overflow: hidden;
+
+    /*For testing purpose*/
+    background-image: url(../img/maps-near-stop.png);
+    background-size: cover;
+}
+
+/*---------------------- Feature 3 starts Here ----------------------*/
+
+.bus-info{
+    background-color: var(--back-color-1);
+    grid-column: 1 / -1;
+}
+
+#bus-number-box{
+    margin-right: 1rem;
+}
+
+.bus-info__container{
+    display: flex;
+}
+
+.bus-list__container{
+    width: 30%;
+    background-color: var(--back-color-2);
+    margin-right: 2rem;
+}
+
+.bus-list{
+    margin: 0 2rem;
+    height: 30rem;
+    overflow: scroll;
+}
+
+.list-item{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    transition: all 0.3s;
+}
+
+.list-item:active,
+.list-item:hover
+{
+    background-color: var(--back-color-3);
+}
+
+.bus-no{
+    color: white;
+    background-color: var(--color-tertiary);
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    border-radius: 3px;
+}
+
+.route-name{
+    font-size: 1.5rem;
+    font-weight: 400;   
+}
+
+.bus-routes{
+    width: 70%;
+    background-color: var(--back-color-2);
+}
+
+.route-item iframe{
+    width: 100%;
+    height: 40rem;
+}
+
+/*---------------------- Feature 4 starts Here ----------------------*/
+
+.contact{
+    grid-column: 1 / -1;
+}
+
+.form-container{
+    width: 70vw;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.contact-form{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: 1fr 3fr;
+    justify-items: center;    
+    align-items: center
+}
+
+.contact-form input[type=text],
+.contact-form select,
+.contact-form textarea {
+    margin: 0rem;
+}
+
+.contact-form label{
+    justify-self: end;
+}
+
+.contact-from-submit{
+    margin-top: 3rem;
+    transform: translateX(35rem);
+}
+
+/*---------------------- Footer starts Here ----------------------*/
+
+.footer {
+    background-color: #101d2c;
+    grid-column: 1 / -1;
+    padding: 3rem; }
+  
+  .nav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+    align-items: center; }
+    .nav__link:link, .nav__link:visited {
+      font-size: 1.4rem;
+      color: #fff;
+      text-decoration: none;
+      font-family: "Josefin Sans", sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 1.5rem;
+      display: block;
+      transition: all 0.2s; }
+    .nav__link:hover, .nav__link:active {
+      background-color: rgba(255, 255, 255, 0.05);
+      transform: translateY(-3px); }
