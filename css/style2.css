@@ -60,7 +60,7 @@ main{
 }
 
 section{
-    padding: 5rem;
+    padding: 1rem;
 }
 
 /*---------------------- Initialization Ends Here ----------------------*/
@@ -278,7 +278,7 @@ textarea {
     color: #eee;
 }
 
-/*---------------------- Feature 2 starts Here ----------------------*/
+/*---------------------- bus analysis----------------------*/
 
 .bus-stop-nearby{
     background-color: var(--back-color-2);
@@ -298,6 +298,111 @@ textarea {
     /*For testing purpose*/
     background-image: url(../img/maps-near-stop.png);
     background-size: cover;
+}
+
+#monitor_bus{
+    background-color:	#ffeeee;
+    grid-column: 1 / -1;
+    padding:1rem;
+}
+#slt_bus{
+    margin-top:  250px;
+    font-size: 20px;
+    color: #394a6d;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: solid;
+    font-weight:  bold;
+    margin-right: 10px;
+    margin-left:150px;
+    
+}
+#slt_busno{
+    font-size: 20px;
+    color: #394a6d;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: solid;
+    font-weight:  bold;
+    margin-left:40px;
+    margin-right: 10px;
+}
+#select_date{
+        width: 12%;
+        height: 30px;
+        box-shadow: 0 2px 4px rgb(1 14 40 / 15%);
+
+    
+}
+#bus_no{
+    width:80px;
+    height: 20px;
+    box-shadow: 0 2px 4px rgb(1 14 40 / 30%);
+    
+}
+#sr_button{
+    margin-left: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    color:#394a6d;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    outline: #3c9d9b;
+    box-shadow: 0 2px 4px rgb(1 14 40 / 20%);
+}
+#sr_button:hover{
+    background-color: #394a6d;
+    color: #eee;
+}
+.peaple_count{
+    font-size: 20px;
+    color: #394a6d;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: solid;
+    font-weight:  bold;
+    margin-right: 10px;
+    margin-left:150px;
+}
+.ticket_scan{
+    font-size: 20px;
+    color: #394a6d;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: solid;
+    font-weight:  bold;
+    margin-right: 10px;
+    margin-left:150px;
+    margin-top:  10px; ;
+}
+.peaple_count_display{
+    background-color:white;
+    width: 150px;
+    position: relative; 
+    margin-left: 150px;
+    margin-top: 10px;
+    padding: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bolder; 
+    color: #475b83;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(1 14 40 / 30%);
+    transition: box-shadow .25s linear,-webkit-box-shadow .25s linear;
+}
+.ticket_count_display{
+    background-color:white;
+    width: 150px;
+    position: relative; 
+    margin-left: 150px;
+    margin-top: 10px;
+    padding: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bolder; 
+    color: #475b83;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(1 14 40 / 30%);
+    transition: box-shadow .25s linear,-webkit-box-shadow .25s linear;
 }
 
 /*---------------------- bus info starts Here ----------------------*/
@@ -410,3 +515,7 @@ textarea {
     size: 16px;
 }
 
+#map{
+    height:100%;
+    width: 100%;
+}
